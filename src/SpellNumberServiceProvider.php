@@ -41,7 +41,7 @@ class SepllNumberServiceProvider extends ServiceProvider
      */
     protected function registerBindings()
     {
-        $this->app->singleton('Spell', function () {
+        $this->app->singleton('SpellNumber', function () {
             $language = config('spellnumber.language');
             $currency = config('spellnumber.currency');
 

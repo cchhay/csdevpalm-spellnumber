@@ -13,6 +13,6 @@ class SpellNumberFacade extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'Spell';
+        return 'SpellNumber';
     }
 }
