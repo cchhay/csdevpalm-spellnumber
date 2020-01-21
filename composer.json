@@ -1,0 +1,21 @@
+{
+    "name": "csdevpalm/palm-spell-number",
+    "description": "This package are spell number in to your prefer language",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "chhay",
+            "email": "chhay_ittech@hotmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": 
+    {
+        "psr-4": 
+        {
+            "Palm\\SpellNumber\\": "src/"
+        }
+    }
+}
