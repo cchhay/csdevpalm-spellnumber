@@ -9,10 +9,9 @@
 ##Public Vendor Configuration <b>php artisan vendor:publish</b>
 
 ##Use
-    <pre>
         SpellNumber::spell($number,$asCurrency = true,$decialShowAsFraction = false);
 
         SpellNumber::spell(1582.58);
         SpellNumber::spell(1582.58,false);
         SpellNumber::spell(1582.58,true,true);
-    </pre>
+
