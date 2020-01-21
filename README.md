@@ -2,4 +2,4 @@
 
 ##This package spell number (currency or just number) in to your prefer language
 
-##Setting Project
+##Install <b>composer require csdevpalm/palm-spell-number</b>
