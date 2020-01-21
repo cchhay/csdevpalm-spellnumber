@@ -1,6 +1,6 @@
 {
     "name": "csdevpalm/palm-spell-number",
-    "description": "This package are spell number (currency or just number) in to your prefer language",
+    "description": "This package spell number (currency or just number) into your prefer language",
     "type": "library",
     "license": "MIT",
     "authors": [
