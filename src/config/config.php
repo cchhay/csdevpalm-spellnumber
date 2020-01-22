@@ -13,6 +13,10 @@ return [
      *  Set the limit digit to read
      */
     'digitReadLimit' => 15,
+    /**
+     *  Set the decimal place digit to read
+     */
+    'digitDegitRead' => 2,
     /*
     *   Set the value to read in your language for 1 to 19
     */

@@ -15,6 +15,7 @@ class SpellNumber
     protected $negative;
     protected $and;
     protected $digitReadLimit;
+    protected $decimalDigitRead;
 
     public function __construct($config = [])
     {
@@ -28,6 +29,7 @@ class SpellNumber
             $this->language = $config['language'];
             $this->currency = $config['currency'];
             $this->cantread = $config['cantread'];
+            $this->decimalDigitRead = $config['decimalDigitRead'];
             $this->zero = $config['zero'];
             $this->and = $config['and'];
             $this->negative = $config['negative'];
@@ -44,6 +46,7 @@ class SpellNumber
         $this->language = $language;
         $this->currency = $currency;
         $this->digitReadLimit = config('spellnumber.digitReadLimit');
+        $this->decimalDigitRead = config('spellnumber.decimalDigitRead');
         $this->cantread = config("spellnumber.Case.$language.cantread");
         $this->zero = config("spellnumber.Case.$language.zero");
         $this->and = config("spellnumber.Case.$language.and");
@@ -124,7 +127,7 @@ class SpellNumber
             return '';
         }
 
-        $arr = explode('.', number_format($number, 2, '.', ','));
+        $arr = explode('.', number_format($number, $this->decimalDigitRead, '.', ','));
 
         if (!$arr[1]) {
             return '';
