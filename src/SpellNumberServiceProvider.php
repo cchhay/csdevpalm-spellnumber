@@ -4,7 +4,7 @@ namespace Palm\SpellNumber;
 
 use Illuminate\Support\ServiceProvider;
 
-class SepllNumberServiceProvider extends ServiceProvider
+class SpellNumberServiceProvider extends ServiceProvider
 {
     protected $defer = false;
 
